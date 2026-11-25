@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#111827" />
+  <title>Solarooof — Agent Portal</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand-title" href="index.html">Solarooof <span>Agent Portal</span></a>
+    <nav class="nav-strip" aria-label="Main navigation">
+      <a class="nav-link active" href="index.html" aria-current="page">Account</a>
+      <a class="nav-link" href="set-password.html">Security</a>
+      <a class="nav-link" href="agent-console.html">Console</a>
+    </nav>
+  </header>
+
+  <main class="page-shell auth-page">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">CUSTOMER CARE, CONNECTED</p>
+        <h1>Every conversation,<br /><span>thoughtfully handled.</span></h1>
+        <p class="helper-text">A calm, secure workspace for calls, team collaboration, and thoughtful customer follow-up.</p>
+        <div class="hero-footnote"><span class="status-dot"></span> Secure agent access · Built for clear conversations</div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="solar-orbit orbit-one"></div>
+        <div class="solar-orbit orbit-two"></div>
+        <div class="solar-sun"></div>
+        <div class="solar-panel"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="orbit-spark spark-one"></div>
+        <div class="orbit-spark spark-two"></div>
+      </div>
+    </section>
+
+    <section class="auth-grid" aria-label="Agent account">
+      <div class="section-band auth-card">
+        <p class="eyebrow">WELCOME BACK</p>
+        <h2 class="section-heading">Sign in</h2>
+        <p class="helper-text">Use your agent account to continue to the calling console.</p>
+        <form onsubmit="handleLogin(event)">
+          <div class="form-stack">
+            <label for="loginEmail">Work email</label>
+            <input id="loginEmail" type="email" placeholder="agent@example.com" autocomplete="username" required />
+            <label for="loginPassword">Password</label>
+            <input id="loginPassword" type="password" autocomplete="current-password" required />
+            <button type="submit" class="btn">Sign in <span aria-hidden="true">→</span></button>
+          </div>
+        </form>
+      </div>
+
+      <div class="section-band auth-card signup-card">
+        <p class="eyebrow">NEW TO THE TEAM?</p>
+        <h2 class="section-heading">Create an account</h2>
+        <p class="helper-text">Register an agent account. A strong password is required to protect access.</p>
+        <form onsubmit="handleSignup(event)">
+          <div class="form-stack">
+            <label for="signupName">Full name</label>
+            <input id="signupName" type="text" placeholder="Your name" autocomplete="name" maxlength="120" required />
+            <label for="signupEmail">Work email</label>
+            <input id="signupEmail" type="email" placeholder="agent@example.com" autocomplete="email" maxlength="160" required />
+            <label for="signupExt">SIP extension</label>
+            <select id="signupExt">
+              <option value="1001">1001</option>
+              <option value="1002">1002</option>
+              <option value="1003">1003</option>
+            </select>
+            <label for="signupPassword">Password <span class="field-hint">12+ characters</span></label>
+            <input id="signupPassword" type="password" minlength="12" maxlength="72" autocomplete="new-password" required />
+            <button type="submit" class="btn btn-soft">Create agent account</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <div id="authBanner" class="status-banner" role="status" aria-live="polite">Ready for sign-in or registration.</div>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>

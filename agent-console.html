@@ -6,11 +6,92 @@
   <meta name="theme-color" content="#111827" />
   <title>Solarooof — Agent Console</title>
   <link rel="stylesheet" href="./styles.css" />
-  <script>window.AGENT_CONFIG = {"sipWssUrl":"wss://tatapowersolar.shop/ws","sipDomain":"tatapowersolar.shop"};</script>
-  <script src="https://cdn.jsdelivr.net/npm/jssip@3.10.1/dist/jssip.min.js"></script>
+  <script>
+    window.AGENT_CONFIG = {
+      sipWssUrl: "wss://tatapowersolar.shop/ws",
+      sipDomain: "tatapowersolar.shop"
+    };
+
+    (function loadJsSipWithFallback() {
+      function injectFallback(src) {
+        if (window.JsSIP) return;
+        var s = document.createElement("script");
+        s.src = src;
+        s.async = false;
+        s.onload = function () {
+          window.dispatchEvent(new Event("jssip:ready"));
+        };
+        document.head.appendChild(s);
+      }
+
+      window.addEventListener("load", function () {
+        if (!window.JsSIP) {
+          injectFallback("https://unpkg.com/jssip@3.10.1/dist/jssip.min.js");
+          setTimeout(function () {
+            if (!window.JsSIP) {
+              injectFallback("https://cdn.jsdelivr.net/npm/jssip@3.10.1/dist/jssip.min.js");
+            }
+          }, 1500);
+        } else {
+          window.dispatchEvent(new Event("jssip:ready"));
+        }
+      });
+    })();
+
+    window.safeConnectSip = function () {
+      var banner = document.getElementById("consoleBanner");
+      if (!window.JsSIP) {
+        if (banner) {
+          banner.textContent = "JsSIP library is still loading or blocked. Check internet/ad-blocker and retry Connect SIP.";
+        }
+        return;
+      }
+      if (typeof window.connectWebRtc === "function") {
+        window.connectWebRtc();
+      } else if (banner) {
+        banner.textContent = "SIP handler not initialized in app.js.";
+      }
+    };
+
+    window.safeDialTarget = function () {
+      var banner = document.getElementById("consoleBanner");
+      var targetEl = document.getElementById("dialTarget");
+      var targetVal = targetEl && targetEl.value ? targetEl.value.trim() : "";
+      if (!targetVal) {
+        if (banner) {
+          banner.textContent = "Connect SIP and enter target extension/number first.";
+        }
+        return;
+      }
+      if (typeof window.dialTarget === "function") {
+        window.dialTarget(targetVal);
+      } else if (typeof window.makeCall === "function") {
+        window.makeCall(targetVal);
+      } else if (banner) {
+        banner.textContent = "Dial function not ready. Connect SIP first.";
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/jssip@3.10.1/dist/jssip.min.js" onload="window.dispatchEvent(new Event('jssip:ready'))"></script>
 </head>
 <body class="console-page">
-<script>(async()=>{try{const r=await fetch("https://tatapowersolar.shop/api/auth.php?action=me",{credentials:"include"});if(!r.ok)return location.replace("./index.html");const d=await r.json();if(!d.ok||!d.agent)return location.replace("./index.html");loadAgentProfile();}catch(e){location.replace("./index.html");}})();</script>
+<script>
+(async () => {
+  try {
+    const r = await fetch("https://tatapowersolar.shop/api/auth.php?action=me", {
+      credentials: "include"
+    });
+    if (!r.ok) return location.replace("./index.html");
+    const d = await r.json();
+    if (!d.ok || !d.agent) return location.replace("./index.html");
+    if (typeof loadAgentProfile === "function") {
+      loadAgentProfile();
+    }
+  } catch (e) {
+    location.replace("./index.html");
+  }
+})();
+</script>
   <header class="topbar">
     <a class="brand-title" href="index.html">Solarooof <span>Agent Portal</span></a>
     <nav class="nav-strip" aria-label="Main navigation">
@@ -45,6 +126,7 @@
             <option value="1001">1001</option>
             <option value="1002">1002</option>
             <option value="1003">1003</option>
+            <option value="1004">1004</option>
           </select>
           <label for="avatarFile">Profile photo</label>
           <input id="avatarFile" type="file" accept="image/png,image/jpeg,image/webp" />
@@ -66,79 +148,18 @@
         <input id="sipExtInput" type="text" value="1001" />
         <label for="sipPassInput">SIP password</label>
         <input id="sipPassInput" type="password" placeholder="SIP secret" autocomplete="off" />
-        <button type="button" class="btn" onclick="connectWebRtc()">Connect SIP</button>
+        <button id="connectSipBtn" type="button" class="btn" onclick="safeConnectSip()">Connect SIP</button>
       </div>
       <div class="field-row">
         <label for="dialTarget">Customer number / extension</label>
         <input id="dialTarget" type="text" placeholder="Customer number or extension" />
-        <button type="button" class="btn" onclick="dialTarget()">Call</button>
-        <button type="button" class="btn btn-soft" onclick="answerIncoming()">Answer</button>
-        <button type="button" class="btn btn-soft" onclick="hangupActive()">Hang up</button>
+        <button id="dialCallBtn" type="button" class="btn" onclick="safeDialTarget()">Call</button>
+        <button id="answerCallBtn" type="button" class="btn btn-soft" onclick="answerIncoming()">Answer</button>
+        <button id="hangupCallBtn" type="button" class="btn btn-soft" onclick="hangupActive()">Hang up</button>
       </div>
       <div class="field-row">
         <label for="transferTarget">Transfer to</label>
         <input id="transferTarget" type="text" placeholder="Extension" />
-        <button type="button" class="btn btn-soft" onclick="transferActive()">Transfer</button>
+        <button id="transferCallBtn" type="button" class="btn btn-soft" onclick="transferActive()">Transfer</button>
         <label for="groupRoomExt">Group bridge</label>
         <select id="groupRoomExt">
-          <option value="1001">Group Room 1001</option>
-          <option value="1002">Group Room 1002</option>
-          <option value="1003">Group Room 1003</option>
-        </select>
-        <button type="button" class="btn" onclick="startGroupCall()">Start group call</button>
-      </div>
-      <audio id="remoteAudio" autoplay></audio>
-      <div id="recordingsList" class="notes-stream"></div>
-    </section>
-
-    <section class="section-band" id="feedbackSection">
-      <h2 class="section-heading">Customer feedback</h2>
-      <p class="helper-text">After a call, create a private survey link for the customer to rate your conduct and behavior from 1 to 5. Copy and share the link using your approved follow-up channel.</p>
-      <div class="field-row">
-        <label for="feedbackRecipient">Customer number</label>
-        <input id="feedbackRecipient" type="text" placeholder="Customer number" />
-        <button id="feedbackLinkButton" type="button" class="btn" onclick="createFeedbackLink()">Create feedback link</button>
-        <button id="copyFeedbackLinkButton" type="button" class="btn btn-soft" onclick="copyFeedbackLink()" hidden>Copy link</button>
-      </div>
-      <p id="feedbackLinkOutput" class="feedback-link" aria-live="polite"></p>
-    </section>
-
-    <section class="section-band">
-      <h2 class="section-heading">Team chat</h2>
-      <form onsubmit="sendGroupChat(event)">
-        <div class="field-row">
-          <input id="groupChatInput" type="text" placeholder="Message team agents..." />
-          <button type="submit" class="btn">Send message</button>
-        </div>
-      </form>
-      <div id="groupChatList" class="chat-stream"></div>
-    </section>
-
-    <section class="section-band">
-      <h2 class="section-heading">Customer message log</h2>
-      <div class="field-row">
-        <label for="msgRecipient">Customer phone</label>
-        <input id="msgRecipient" type="text" placeholder="+91XXXXXXXXXX" />
-        <label for="msgBody">Message</label>
-        <input id="msgBody" type="text" placeholder="Enter update for customer..." />
-        <button type="button" class="btn" onclick="sendCustomerMessage('sms')">Log SMS</button>
-        <button type="button" class="btn btn-soft" onclick="sendCustomerMessage('whatsapp')">Log WhatsApp</button>
-      </div>
-    </section>
-
-    <section class="section-band">
-      <h2 class="section-heading">Shortcut notes</h2>
-      <p class="helper-text">Customer status notes are automatically deleted after 15 days.</p>
-      <form onsubmit="addShortcutNote(event)">
-        <div class="field-row">
-          <input id="noteCustomerRef" type="text" placeholder="Customer / ticket ID" />
-          <input id="noteText" type="text" placeholder="Quick customer status note..." required />
-          <button type="submit" class="btn">Save note</button>
-        </div>
-      </form>
-      <div id="notesList" class="notes-stream"></div>
-    </section>
-  </main>
-  <script src="./app.js"></script>
-</body>
-</html>

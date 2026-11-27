@@ -1,0 +1,207 @@
+{
+  "main_menu": {
+    "bn": "টাটা পাওয়ার সোলারুফ-এ স্বাগতম। ১ চাপুন সাপোর্টের জন্য, ২ সার্ভিসের জন্য, ৩ ইনস্টলেশনের জন্য, ৪ চ্যানেল পার্টনার বা ডিস্ট্রিবিউটর হওয়ার জন্য, ৫ ডিসকম নেট-মিটারিং তথ্যের জন্য, ৬ ভর্তুকির জন্য। ভাষা বদলাতে ৭ চাপুন। আবার শুনতে ০ বা ৮ চাপুন।",
+    "en": "Welcome to Tata Power Solarooof. Press 1 for Support, 2 for Service, 3 for Installations, 4 to become a Channel Partner or Distributor, 5 for DISCOM net-metering information, 6 for Subsidy, or 7 to change the IVR language. Press 0 or 8 to hear this menu again.",
+    "hi": "टाटा पावर सोलारूफ में आपका स्वागत है। सहायता के लिए 1 दबाएँ, सर्विस के लिए 2, इंस्टॉलेशन के लिए 3, चैनल पार्टनर या डिस्ट्रीब्यूटर बनने के लिए 4, डिस्कॉम नेट-मीटरिंग जानकारी के लिए 5, सब्सिडी के लिए 6, या आई वी आर भाषा बदलने के लिए 7 दबाएँ। यह मेन्यू फिर से सुनने के लिए 0 या 8 दबाएँ।"
+  },
+  "invalid_key": {
+    "bn": "আপনি ভুল ইনপুট দিয়েছেন।",
+    "en": "You have entered an invalid input.",
+    "hi": "आपने गलत इनपुट दर्ज किया है।"
+  },
+  "timeout_msg": {
+    "bn": "আপনি কোনো ইনপুট দেননি; অনুগ্রহ করে আপনার নির্বাচনটি দিন।",
+    "en": "You have not provided any input; please enter your selection.",
+    "hi": "आपने कोई इनपुट नहीं दिया है; कृपया अपना विकल्प दर्ज करें।"
+  },
+  "action_unavailable": {
+    "bn": "দুঃখিত, এই মুহূর্তে আপনার অনুরোধটি সম্পন্ন করা যাচ্ছে না। অনুগ্রহ করে পরে আবার চেষ্টা করুন।",
+    "en": "We are sorry, but we cannot complete your request right now. Please try again later.",
+    "hi": "हमें खेद है, हम अभी आपका अनुरोध पूरा नहीं कर सकते। कृपया बाद में फिर से प्रयास करें।"
+  },
+  "opt1_support_menu": {
+    "bn": "সাপোর্ট মেনু। বিলিংয়ের জন্য ১ চাপুন, অ্যাপ বা পোর্টালের জন্য ২, ওয়ারেন্টি বা নথির জন্য ৩। আগের মেনুতে ফিরতে ০ চাপুন।",
+    "en": "Support. Press 1 for Billing, 2 for the App or Portal, or 3 for Warranty or Documents. Press 0 to return to the previous menu.",
+    "hi": "सहायता के लिए। बिलिंग के लिए 1 दबाएँ, ऐप या पोर्टल के लिए 2, वारंटी या दस्तावेज़ों के लिए 3। पिछले मेन्यू पर लौटने के लिए 0 दबाएँ।"
+  },
+  "opt1_1_billing": {
+    "bn": "বিলিং সংক্রান্ত সহায়তার জন্য আপনার অনুরোধটি আমাদের টিমের কাছে পাঠানো হচ্ছে। একজন প্রতিনিধি আপনার সঙ্গে যোগাযোগ করবেন। আগের মেনুতে ফিরতে ০ চাপুন, অথবা প্রধান মেনুতে যেতে ৮ চাপুন।",
+    "en": "Your billing request is being routed to our team. A representative will assist you. Press 0 to return to the previous menu, or 8 to return to the main menu.",
+    "hi": "बिलिंग सहायता का आपका अनुरोध हमारी टीम को भेजा जा रहा है। एक प्रतिनिधि आपकी सहायता करेंगे। पिछले मेन्यू पर लौटने के लिए 0 दबाएँ, या मुख्य मेन्यू पर लौटने के लिए 8 दबाएँ।"
+  },
+  "opt1_2_portal": {
+    "bn": "অ্যাপ বা পোর্টাল সহায়তার জন্য আপনার অনুরোধটি নথিভুক্ত করা হয়েছে। আমরা এস এম এস বা ইমেলে একটি লিংক পাঠাব এবং প্রয়োজনে একজন প্রতিনিধি আপনার সঙ্গে যোগাযোগ করবেন। আগের মেনুতে ফিরতে ০ চাপুন, অথবা প্রধান মেনুতে যেতে ৮ চাপুন।",
+    "en": "Your App or Portal support request has been recorded. We will send a link by SMS or email, and a representative will contact you if needed. Press 0 to return to the previous menu, or 8 to return to the main menu.",
+    "hi": "ऐप या पोर्टल सहायता का आपका अनुरोध दर्ज कर लिया गया है। हम एस एम एस या ईमेल से एक लिंक भेजेंगे और ज़रूरत पड़ने पर एक प्रतिनिधि आपसे संपर्क करेंगे। पिछले मेन्यू पर लौटने के लिए 0 दबाएँ, या मुख्य मेन्यू पर लौटने के लिए 8 दबाएँ।"
+  },
+  "opt1_3_warranty": {
+    "bn": "ওয়ারেন্টি বা নথি সংক্রান্ত অনুরোধটি আমাদের ডকুমেন্টেশন টিমের কাছে পাঠানো হয়েছে। আগের মেনুতে ফিরতে ০ চাপুন, অথবা প্রধান মেনুতে যেতে ৮ চাপুন।",
+    "en": "Your Warranty or Documents request has been forwarded to our documentation team. Press 0 to return to the previous menu, or 8 to return to the main menu.",
+    "hi": "वारंटी या दस्तावेज़ों का आपका अनुरोध हमारी दस्तावेज़ टीम को भेज दिया गया है। पिछले मेन्यू पर लौटने के लिए 0 दबाएँ, या मुख्य मेन्यू पर लौटने के लिए 8 दबाएँ।"
+  },
+  "opt2_service_menu": {
+    "bn": "সার্ভিস মেনু। বিদ্যমান গ্রাহক হলে ১ চাপুন, নতুন গ্রাহক হলে ২, নির্ধারিত রক্ষণাবেক্ষণ বা পরিদর্শনের জন্য ৩। আগের মেনুতে ফিরতে ০ চাপুন।",
+    "en": "Service. Press 1 if you are an Existing Customer, 2 if you are a New Customer, or 3 for Scheduled Maintenance or Inspection. Press 0 to return to the previous menu.",
+    "hi": "सर्विस के लिए। मौजूदा ग्राहक हैं तो 1 दबाएँ, नए ग्राहक हैं तो 2, और निर्धारित रखरखाव या निरीक्षण के लिए 3 दबाएँ। पिछले मेन्यू पर लौटने के लिए 0 दबाएँ।"
+  },
+  "opt2_1_existing_menu": {
+    "bn": "বিদ্যমান গ্রাহক সার্ভিস। জরুরি বিদ্যুৎ সংযোগ পুনরায় চালুর জন্য ১ চাপুন, হোম নেট-মিটারিং রিপোর্ট জমা দিতে ২, সিস্টেমের কার্যকারিতা বা ইনভার্টার পরীক্ষা করতে ৩। আগের মেনুতে ফিরতে ০ চাপুন।",
+    "en": "Existing Customer Service. Press 1 for Emergency Power Disconnection Reconnection, 2 to Submit a Home Net-Metering Report, or 3 for a System Performance or Inverter Check. Press 0 to return to the previous menu.",
+    "hi": "मौजूदा ग्राहक सर्विस। आपातकालीन बिजली कनेक्शन दोबारा चालू कराने के लिए 1 दबाएँ, होम नेट-मीटरिंग रिपोर्ट जमा करने के लिए 2, या सिस्टम प्रदर्शन अथवा इन्वर्टर जाँच के लिए 3 दबाएँ। पिछले मेन्यू पर लौटने के लिए 0 दबाएँ।"
+  },
+  "opt2_1_1_emergency_reconn": {
+    "bn": "অসুবিধার জন্য আমরা দুঃখিত; আপনার জরুরি অনুরোধটি আমাদের টিমের কাছে পাঠানো হয়েছে, এবং একজন প্রতিনিধি শীঘ্রই আপনার সঙ্গে যোগাযোগ করবেন। আগের মেনুতে ফিরতে ০ চাপুন, অথবা প্রধান মেনুতে যেতে ৮ চাপুন।",
+    "en": "We apologize for the inconvenience; your urgent request has been forwarded to our team, and a representative will contact you shortly. Press 0 to return to the previous menu, or 8 to return to the main menu.",
+    "hi": "असुविधा के लिए हमें खेद है; आपका अत्यावश्यक अनुरोध हमारी टीम को भेज दिया गया है और एक प्रतिनिधि शीघ्र ही आपसे संपर्क करेंगे। पिछले मेन्यू पर लौटने के लिए 0 दबाएँ, या मुख्य मेन्यू पर लौटने के लिए 8 दबाएँ।"
+  },
+  "opt2_1_2_netmeter_report": {
+    "bn": "আপনার নেট-মিটারিং রিপোর্ট ইতিমধ্যেই জমা হয়েছে; শীঘ্রই আমাদের কাছ থেকে এস এম এস অথবা ইমেল পাবেন। আগের মেনুতে ফিরতে ০ চাপুন, অথবা প্রধান মেনুতে যেতে ৮ চাপুন।",
+    "en": "Your net-metering report has already been submitted; you will receive an SMS or email from us shortly. Press 0 to return to the previous menu, or 8 to return to the main menu.",
+    "hi": "आपकी नेट-मीटरिंग रिपोर्ट पहले ही जमा हो चुकी है; आपको शीघ्र ही हमारी ओर से एस एम एस या ईमेल मिलेगा। पिछले मेन्यू पर लौटने के लिए 0 दबाएँ, या मुख्य मेन्यू पर लौटने के लिए 8 दबाएँ।"
+  },
+  "opt2_1_3_inverter_check": {
+    "bn": "সিস্টেমের কার্যকারিতা বা ইনভার্টার পরীক্ষা করার অনুরোধটি নথিভুক্ত হয়েছে। আমাদের টিম আপনার সঙ্গে যোগাযোগ করবে। আগের মেনুতে ফিরতে ০ চাপুন, অথবা প্রধান মেনুতে যেতে ৮ চাপুন।",
+    "en": "Your System Performance or Inverter Check request has been logged. Our team will contact you. Press 0 to return to the previous menu, or 8 to return to the main menu.",
+    "hi": "सिस्टम प्रदर्शन या इन्वर्टर जाँच का आपका अनुरोध दर्ज कर लिया गया है। हमारी टीम आपसे संपर्क करेगी। पिछले मेन्यू पर लौटने के लिए 0 दबाएँ, या मुख्य मेन्यू पर लौटने के लिए 8 दबाएँ।"
+  },
+  "opt2_2_new_cust_menu": {
+    "bn": "নতুন গ্রাহক সার্ভিস। অনবোর্ডিং নির্দেশিকার জন্য ১ চাপুন, বিক্রেতার যাচাইয়ের জন্য ২। আগের মেনুতে ফিরতে ০ চাপুন।",
+    "en": "New Customer Service. Press 1 for an Onboarding Guide, or 2 for Vendor Verification. Press 0 to return to the previous menu.",
+    "hi": "नए ग्राहक सर्विस। ऑनबोर्डिंग गाइड के लिए 1 दबाएँ, या विक्रेता सत्यापन के लिए 2 दबाएँ। पिछले मेन्यू पर लौटने के लिए 0 दबाएँ।"
+  },
+  "opt2_2_1_onboarding": {
+    "bn": "অনবোর্ডিং নির্দেশিকার অনুরোধটি নথিভুক্ত হয়েছে। আমরা আপনাকে হোয়াটসঅ্যাপ বা এস এম এস-এ তথ্য পাঠাব। আগের মেনুতে ফিরতে ০ চাপুন, অথবা প্রধান মেনুতে যেতে ৮ চাপুন।",
+    "en": "Your onboarding guide request has been recorded. We will send the information by WhatsApp or SMS. Press 0 to return to the previous menu, or 8 to return to the main menu.",
+    "hi": "ऑनबोर्डिंग गाइड का आपका अनुरोध दर्ज कर लिया गया है। हम आपको व्हाट्सऐप या एस एम एस से जानकारी भेजेंगे। पिछले मेन्यू पर लौटने के लिए 0 दबाएँ, या मुख्य मेन्यू पर लौटने के लिए 8 दबाएँ।"
+  },
+  "opt2_2_2_vendor_verify": {
+    "bn": "বিক্রেতা যাচাইয়ের জন্য আপনার অনুরোধটি নথিভুক্ত হয়েছে। আমাদের টিম শীঘ্রই আপনার সঙ্গে যোগাযোগ করবে। আগের মেনুতে ফিরতে ০ চাপুন, অথবা প্রধান মেনুতে যেতে ৮ চাপুন।",
+    "en": "Your Vendor Verification request has been recorded. Our team will contact you shortly. Press 0 to return to the previous menu, or 8 to return to the main menu.",
+    "hi": "विक्रेता सत्यापन का आपका अनुरोध दर्ज कर लिया गया है। हमारी टीम शीघ्र ही आपसे संपर्क करेगी। पिछले मेन्यू पर लौटने के लिए 0 दबाएँ, या मुख्य मेन्यू पर लौटने के लिए 8 दबाएँ।"
+  },
+  "opt2_3_maint_menu": {
+    "bn": "নির্ধারিত রক্ষণাবেক্ষণ বা পরিদর্শন। পরিষ্কারের সময় নির্ধারণের জন্য ১ চাপুন, পরিদর্শনের অবস্থা জানতে ২। আগের মেনুতে ফিরতে ০ চাপুন।",
+    "en": "Scheduled Maintenance or Inspection. Press 1 to request a Cleaning Slot, or 2 to check Visit Status. Press 0 to return to the previous menu.",
+    "hi": "निर्धारित रखरखाव या निरीक्षण के लिए। सफाई का समय तय करने हेतु 1 दबाएँ, या विज़िट की स्थिति जानने के लिए 2 दबाएँ। पिछले मेन्यू पर लौटने के लिए 0 दबाएँ।"
+  },
+  "opt2_3_1_cleaning_slot": {
+    "bn": "সোলার প্যানেল পরিষ্কারের সময় নির্ধারণের অনুরোধটি নথিভুক্ত হয়েছে। আমাদের টিম সময় নিশ্চিত করতে আপনার সঙ্গে যোগাযোগ করবে। আগের মেনুতে ফিরতে ০ চাপুন, অথবা প্রধান মেনুতে যেতে ৮ চাপুন।",
+    "en": "Your solar panel Cleaning Slot request has been recorded. Our team will contact you to confirm a time. Press 0 to return to the previous menu, or 8 to return to the main menu.",
+    "hi": "सोलर पैनल की सफाई का समय तय करने का आपका अनुरोध दर्ज कर लिया गया है। समय की पुष्टि के लिए हमारी टीम आपसे संपर्क करेगी। पिछले मेन्यू पर लौटने के लिए 0 दबाएँ, या मुख्य मेन्यू पर लौटने के लिए 8 दबाएँ।"
+  },
+  "opt2_3_2_visit_status": {
+    "bn": "আপনার পরিদর্শনের অবস্থার তথ্য এস এম এস-এ পাঠানো হবে। আগের মেনুতে ফিরতে ০ চাপুন, অথবা প্রধান মেনুতে যেতে ৮ চাপুন।",
+    "en": "Your visit status will be sent by SMS. Press 0 to return to the previous menu, or 8 to return to the main menu.",
+    "hi": "आपकी विज़िट की स्थिति एस एम एस से भेजी जाएगी। पिछले मेन्यू पर लौटने के लिए 0 दबाएँ, या मुख्य मेन्यू पर लौटने के लिए 8 दबाएँ।"
+  },
+  "opt3_install_menu": {
+    "bn": "ইনস্টলেশন। আবাসিক ইনস্টলেশনের জন্য ১ চাপুন, বাণিজ্যিক ইনস্টলেশনের জন্য ২, সাইট সার্ভের জন্য ৩। আগের মেনুতে ফিরতে ০ চাপুন।",
+    "en": "Installations. Press 1 for Residential, 2 for Commercial, or 3 for a Site Survey. Press 0 to return to the previous menu.",
+    "hi": "इंस्टॉलेशन के लिए। आवासीय के लिए 1 दबाएँ, वाणिज्यिक के लिए 2, या साइट सर्वे के लिए 3 दबाएँ। पिछले मेन्यू पर लौटने के लिए 0 दबाएँ।"
+  },
+  "opt3_1_residential": {
+    "bn": "আবাসিক সোলার ইনস্টলেশনের জন্য আপনার অনুরোধটি নথিভুক্ত হয়েছে। আমাদের টিম যোগাযোগ করবে। আগের মেনুতে ফিরতে ০ চাপুন, অথবা প্রধান মেনুতে যেতে ৮ চাপুন।",
+    "en": "Your Residential solar installation request has been recorded. Our team will contact you. Press 0 to return to the previous menu, or 8 to return to the main menu.",
+    "hi": "आवासीय सोलर इंस्टॉलेशन का आपका अनुरोध दर्ज कर लिया गया है। हमारी टीम आपसे संपर्क करेगी। पिछले मेन्यू पर लौटने के लिए 0 दबाएँ, या मुख्य मेन्यू पर लौटने के लिए 8 दबाएँ।"
+  },
+  "opt3_2_commercial": {
+    "bn": "বাণিজ্যিক সোলার ইনস্টলেশনের জন্য আপনার অনুরোধটি নথিভুক্ত হয়েছে। আমাদের টিম যোগাযোগ করবে। আগের মেনুতে ফিরতে ০ চাপুন, অথবা প্রধান মেনুতে যেতে ৮ চাপুন।",
+    "en": "Your Commercial solar installation request has been recorded. Our team will contact you. Press 0 to return to the previous menu, or 8 to return to the main menu.",
+    "hi": "वाणिज्यिक सोलर इंस्टॉलेशन का आपका अनुरोध दर्ज कर लिया गया है। हमारी टीम आपसे संपर्क करेगी। पिछले मेन्यू पर लौटने के लिए 0 दबाएँ, या मुख्य मेन्यू पर लौटने के लिए 8 दबाएँ।"
+  },
+  "opt3_3_site_survey": {
+    "bn": "সাইট সার্ভের অনুরোধটি নথিভুক্ত হয়েছে। আমাদের টিম সময় নির্ধারণের জন্য যোগাযোগ করবে। আগের মেনুতে ফিরতে ০ চাপুন, অথবা প্রধান মেনুতে যেতে ৮ চাপুন।",
+    "en": "Your Site Survey request has been recorded. Our team will contact you to schedule a visit. Press 0 to return to the previous menu, or 8 to return to the main menu.",
+    "hi": "साइट सर्वे का आपका अनुरोध दर्ज कर लिया गया है। विज़िट तय करने के लिए हमारी टीम आपसे संपर्क करेगी। पिछले मेन्यू पर लौटने के लिए 0 दबाएँ, या मुख्य मेन्यू पर लौटने के लिए 8 दबाएँ।"
+  },
+  "opt4_partner_menu": {
+    "bn": "চ্যানেল পার্টনার বা ডিস্ট্রিবিউটর মেনু। আবেদন করতে ১ চাপুন, যোগ্যতা ও নথি জানতে ২, আবেদনের অবস্থা জানতে ৩। আগের মেনুতে ফিরতে ০ চাপুন।",
+    "en": "Channel Partner or Distributor. Press 1 to Apply, 2 for Eligibility and Documents, or 3 for Application Status. Press 0 to return to the previous menu.",
+    "hi": "चैनल पार्टनर या डिस्ट्रीब्यूटर के लिए। आवेदन करने हेतु 1 दबाएँ, पात्रता और दस्तावेज़ों के लिए 2, या आवेदन की स्थिति के लिए 3 दबाएँ। पिछले मेन्यू पर लौटने के लिए 0 दबाएँ।"
+  },
+  "opt4_1_new_apply": {
+    "bn": "চ্যানেল পার্টনার বা ডিস্ট্রিবিউটর হওয়ার আবেদনটি নথিভুক্ত হয়েছে। আমাদের টিম আপনার সঙ্গে যোগাযোগ করবে। আগের মেনুতে ফিরতে ০ চাপুন, অথবা প্রধান মেনুতে যেতে ৮ চাপুন।",
+    "en": "Your Channel Partner or Distributor application request has been recorded. Our team will contact you. Press 0 to return to the previous menu, or 8 to return to the main menu.",
+    "hi": "चैनल पार्टनर या डिस्ट्रीब्यूटर बनने का आपका आवेदन अनुरोध दर्ज कर लिया गया है। हमारी टीम आपसे संपर्क करेगी। पिछले मेन्यू पर लौटने के लिए 0 दबाएँ, या मुख्य मेन्यू पर लौटने के लिए 8 दबाएँ।"
+  },
+  "opt4_2_eligibility_docs": {
+    "bn": "যোগ্যতা ও প্রয়োজনীয় নথির তথ্য এস এম এস বা ইমেলে পাঠানো হবে। আগের মেনুতে ফিরতে ০ চাপুন, অথবা প্রধান মেনুতে যেতে ৮ চাপুন।",
+    "en": "Eligibility and required document information will be sent by SMS or email. Press 0 to return to the previous menu, or 8 to return to the main menu.",
+    "hi": "पात्रता और आवश्यक दस्तावेज़ों की जानकारी एस एम एस या ईमेल से भेजी जाएगी। पिछले मेन्यू पर लौटने के लिए 0 दबाएँ, या मुख्य मेन्यू पर लौटने के लिए 8 दबाएँ।"
+  },
+  "opt4_3_app_status": {
+    "bn": "আপনার আবেদন জমা দেওয়ার পর তার অবস্থা এস এম এস-এ পাঠানো হবে। আগের মেনুতে ফিরতে ০ চাপুন, অথবা প্রধান মেনুতে যেতে ৮ চাপুন।",
+    "en": "Once your application is submitted, its status will be sent by SMS. Press 0 to return to the previous menu, or 8 to return to the main menu.",
+    "hi": "आपका आवेदन जमा होने के बाद उसकी स्थिति एस एम एस से भेजी जाएगी। पिछले मेन्यू पर लौटने के लिए 0 दबाएँ, या मुख्य मेन्यू पर लौटने के लिए 8 दबाएँ।"
+  },
+  "opt5_netmeter_menu": {
+    "bn": "ডিসকম নেট-মিটারিং তথ্য। পিনকোড পরীক্ষা করতে ১ চাপুন, প্রক্রিয়া জানতে ২, এক্সপোর্ট নিয়ম জানতে ৩। আগের মেনুতে ফিরতে ০ চাপুন।",
+    "en": "DISCOM Net-Metering. Press 1 for a Pincode Check, 2 for the Connection Process, or 3 for Export Rules. Press 0 to return to the previous menu.",
+    "hi": "डिस्कॉम नेट-मीटरिंग के लिए। पिनकोड जाँचने हेतु 1 दबाएँ, कनेक्शन प्रक्रिया के लिए 2, या एक्सपोर्ट नियमों के लिए 3 दबाएँ। पिछले मेन्यू पर लौटने के लिए 0 दबाएँ।"
+  },
+  "opt5_1_pincode_check": {
+    "bn": "নেট-মিটারিং পরিষেবা পাওয়া যায় কি না তা পরীক্ষা করতে আপনার পিনকোডটি দিন। আগের মেনুতে ফিরতে ০ চাপুন, অথবা প্রধান মেনুতে যেতে ৮ চাপুন।",
+    "en": "Please enter your Pincode to check net-metering availability. Press 0 to return to the previous menu, or 8 to return to the main menu.",
+    "hi": "नेट-मीटरिंग उपलब्धता जाँचने के लिए कृपया अपना पिनकोड दर्ज करें। पिछले मेन्यू पर लौटने के लिए 0 दबाएँ, या मुख्य मेन्यू पर लौटने के लिए 8 दबाएँ।"
+  },
+  "opt5_2_conn_process": {
+    "bn": "নেট-মিটারিং সংযোগ প্রক্রিয়ার তথ্য এস এম এস বা ইমেলে পাঠানো হবে। আগের মেনুতে ফিরতে ০ চাপুন, অথবা প্রধান মেনুতে যেতে ৮ চাপুন।",
+    "en": "Information about the net-metering connection process will be sent by SMS or email. Press 0 to return to the previous menu, or 8 to return to the main menu.",
+    "hi": "नेट-मीटरिंग कनेक्शन प्रक्रिया की जानकारी एस एम एस या ईमेल से भेजी जाएगी। पिछले मेन्यू पर लौटने के लिए 0 दबाएँ, या मुख्य मेन्यू पर लौटने के लिए 8 दबाएँ।"
+  },
+  "opt5_3_export_rules": {
+    "bn": "নেট-মিটারিং এক্সপোর্ট নিয়মের তথ্য এস এম এস বা ইমেলে পাঠানো হবে। আগের মেনুতে ফিরতে ০ চাপুন, অথবা প্রধান মেনুতে যেতে ৮ চাপুন।",
+    "en": "Information about net-metering export rules will be sent by SMS or email. Press 0 to return to the previous menu, or 8 to return to the main menu.",
+    "hi": "नेट-मीटरिंग एक्सपोर्ट नियमों की जानकारी एस एम एस या ईमेल से भेजी जाएगी। पिछले मेन्यू पर लौटने के लिए 0 दबाएँ, या मुख्य मेन्यू पर लौटने के लिए 8 दबाएँ।"
+  },
+  "opt6_subsidy_menu": {
+    "bn": "ভর্তুকি। উপলব্ধ প্রকল্প জানতে ১ চাপুন, যোগ্যতা জানতে ২, অর্থপ্রদানের অবস্থা জানতে ৩। আগের মেনুতে ফিরতে ০ চাপুন।",
+    "en": "Subsidy. Press 1 for Schemes, 2 for Eligibility, or 3 for Payout Status. Press 0 to return to the previous menu.",
+    "hi": "सब्सिडी के लिए। योजनाओं की जानकारी हेतु 1 दबाएँ, पात्रता के लिए 2, या भुगतान की स्थिति के लिए 3 दबाएँ। पिछले मेन्यू पर लौटने के लिए 0 दबाएँ।"
+  },
+  "opt6_1_schemes": {
+    "bn": "উপলব্ধ ভর্তুকি প্রকল্পের তথ্য এস এম এস বা ইমেলে পাঠানো হবে। আগের মেনুতে ফিরতে ০ চাপুন, অথবা প্রধান মেনুতে যেতে ৮ চাপুন।",
+    "en": "Information about available subsidy schemes will be sent by SMS or email. Press 0 to return to the previous menu, or 8 to return to the main menu.",
+    "hi": "उपलब्ध सब्सिडी योजनाओं की जानकारी एस एम एस या ईमेल से भेजी जाएगी। पिछले मेन्यू पर लौटने के लिए 0 दबाएँ, या मुख्य मेन्यू पर लौटने के लिए 8 दबाएँ।"
+  },
+  "opt6_2_eligibility": {
+    "bn": "ভর্তুকির যোগ্যতা সংক্রান্ত তথ্য এস এম এস বা ইমেলে পাঠানো হবে। আগের মেনুতে ফিরতে ০ চাপুন, অথবা প্রধান মেনুতে যেতে ৮ চাপুন।",
+    "en": "Information about subsidy eligibility will be sent by SMS or email. Press 0 to return to the previous menu, or 8 to return to the main menu.",
+    "hi": "सब्सिडी पात्रता की जानकारी एस एम एस या ईमेल से भेजी जाएगी। पिछले मेन्यू पर लौटने के लिए 0 दबाएँ, या मुख्य मेन्यू पर लौटने के लिए 8 दबाएँ।"
+  },
+  "opt6_3_payout_status": {
+    "bn": "ভর্তুকির অর্থপ্রদানের অবস্থা জানতে আপনার অনুরোধটি নথিভুক্ত হয়েছে। আমরা এস এম এস-এ আপডেট পাঠাব। আগের মেনুতে ফিরতে ০ চাপুন, অথবা প্রধান মেনুতে যেতে ৮ চাপুন।",
+    "en": "Your Subsidy Payout Status request has been recorded. We will send an update by SMS. Press 0 to return to the previous menu, or 8 to return to the main menu.",
+    "hi": "सब्सिडी भुगतान की स्थिति का आपका अनुरोध दर्ज कर लिया गया है। हम एस एम एस से अपडेट भेजेंगे। पिछले मेन्यू पर लौटने के लिए 0 दबाएँ, या मुख्य मेन्यू पर लौटने के लिए 8 दबाएँ।"
+  },
+  "opt7_lang_menu": {
+    "bn": "ভাষা নির্বাচন করুন। বাংলার জন্য ১ চাপুন, ইংরেজির জন্য ২, হিন্দির জন্য ৩। আগের মেনুতে ফিরতে ০ চাপুন।",
+    "en": "Choose your language. Press 1 for Bengali, 2 for English, or 3 for Hindi. Press 0 to return to the previous menu.",
+    "hi": "अपनी भाषा चुनें। बंगाली के लिए 1 दबाएँ, अंग्रेज़ी के लिए 2, या हिंदी के लिए 3 दबाएँ। पिछले मेन्यू पर लौटने के लिए 0 दबाएँ।"
+  },
+  "lang_set_bn": {
+    "bn": "আপনার ভাষা বাংলা হিসেবে নির্বাচন করা হয়েছে।",
+    "en": "Bengali has been selected as your language.",
+    "hi": "आपकी भाषा बंगाली चुनी गई है।"
+  },
+  "lang_set_en": {
+    "bn": "আপনার ভাষা ইংরেজি হিসেবে নির্বাচন করা হয়েছে।",
+    "en": "English has been selected as your language.",
+    "hi": "आपकी भाषा अंग्रेज़ी चुनी गई है।"
+  },
+  "lang_set_hi": {
+    "bn": "আপনার ভাষা হিন্দি হিসেবে নির্বাচন করা হয়েছে।",
+    "en": "Hindi has been selected as your language.",
+    "hi": "आपकी भाषा हिंदी चुनी गई है।"
+  },
+  "max_attempts": {
+    "bn": "আপনি অনুমোদিত সর্বোচ্চ সংখ্যক প্রচেষ্টা অতিক্রম করেছেন। টাটা পাওয়ারে ফোন করার জন্য ধন্যবাদ।",
+    "en": "You have exceeded the maximum number of allowed attempts. Thank you for calling Tata Power.",
+    "hi": "आप अनुमत प्रयासों की अधिकतम सीमा पार कर चुके हैं। टाटा पावर को कॉल करने के लिए धन्यवाद।"
+  },
+  "fraud_warning": {
+    "bn": "কোনো অজানা নম্বর থেকে ফোন করে কেউ নিজেকে পুলিশ, সিবিআই বা কাস্টমস বিভাগের কর্মী বলে পরিচয় দিলে, তাদের ফাঁদে পা দেবেন না; আপনি প্রতারণার শিকার হতে পারেন। টাটা পাওয়ার সবসময় আপনার পাশে আছে।",
+    "en": "If you receive a call from an unknown number where the caller claims to be from the Police, CBI, or Customs department, do not fall into their trap; you could become a victim of fraud. Tata Power is always by your side.",
+    "hi": "अगर किसी अनजान नंबर से कॉल आए और कॉल करने वाला खुद को पुलिस, सीबीआई या कस्टम्स विभाग से बताए, तो उसके झाँसे में न आएँ; आप धोखाधड़ी के शिकार हो सकते हैं। टाटा पावर हमेशा आपके साथ है।"
+  }
+}

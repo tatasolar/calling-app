@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#111827" />
+  <title>Customer Feedback — Solarooof</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="feedback-page">
+  <main class="section-band feedback-card">
+    <p class="eyebrow">CUSTOMER FEEDBACK</p>
+    <h1 class="section-heading">How was your conversation?</h1>
+    <p class="helper-text">Your ratings help us improve the care we provide. Both questions use a 1–5 scale, where 1 is very poor and 5 is excellent.</p>
+    <form class="form-stack" onsubmit="submitCustomerFeedback(event)">
+      <fieldset class="rating-field">
+        <legend>How would you rate the agent's conduct?</legend>
+        <div class="rating-options">
+          <label class="rating-option"><input type="radio" name="conduct_rating" value="1" required /><span>1</span></label>
+          <label class="rating-option"><input type="radio" name="conduct_rating" value="2" /><span>2</span></label>
+          <label class="rating-option"><input type="radio" name="conduct_rating" value="3" /><span>3</span></label>
+          <label class="rating-option"><input type="radio" name="conduct_rating" value="4" /><span>4</span></label>
+          <label class="rating-option"><input type="radio" name="conduct_rating" value="5" /><span>5</span></label>
+        </div>
+        <div class="rating-legend"><span>1 · Very poor</span><span>5 · Excellent</span></div>
+      </fieldset>
+      <fieldset class="rating-field">
+        <legend>How would you rate the agent's behavior?</legend>
+        <div class="rating-options">
+          <label class="rating-option"><input type="radio" name="behavior_rating" value="1" required /><span>1</span></label>
+          <label class="rating-option"><input type="radio" name="behavior_rating" value="2" /><span>2</span></label>
+          <label class="rating-option"><input type="radio" name="behavior_rating" value="3" /><span>3</span></label>
+          <label class="rating-option"><input type="radio" name="behavior_rating" value="4" /><span>4</span></label>
+          <label class="rating-option"><input type="radio" name="behavior_rating" value="5" /><span>5</span></label>
+        </div>
+        <div class="rating-legend"><span>1 · Very poor</span><span>5 · Excellent</span></div>
+      </fieldset>
+      <label for="feedbackComments">Additional comments (optional)</label>
+      <textarea id="feedbackComments" rows="4" maxlength="1000" placeholder="Share anything else you'd like us to know."></textarea>
+      <button type="submit" class="btn">Submit feedback</button>
+    </form>
+    <div id="feedbackBanner" class="status-banner" role="status" aria-live="polite">Your response is private and can only be submitted once.</div>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>

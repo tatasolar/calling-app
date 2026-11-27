@@ -1,0 +1,65 @@
+# Adapt paths, PHP-FPM socket, TLS certificate, and hostname for the VPS.
+server {
+    listen 80;
+    server_name tatapowersolar.shop;
+    return 301 https://tatapowersolar.shop$request_uri;
+}
+
+server {
+    listen 443 ssl;
+    server_name tatapowersolar.shop;
+
+    root /var/www/calling-app;
+    index index.html;
+    server_tokens off;
+    client_max_body_size 26m;
+
+    ssl_certificate /etc/letsencrypt/live/tatapowersolar.shop/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/tatapowersolar.shop/privkey.pem;
+    ssl_protocols TLSv1.2 TLSv1.3;
+
+    add_header X-Content-Type-Options nosniff always;
+    add_header X-Frame-Options DENY always;
+    add_header Referrer-Policy strict-origin-when-cross-origin always;
+    add_header Permissions-Policy "camera=(), geolocation=(), payment=()" always;
+
+    location ~ /\.(?!well-known) {
+        deny all;
+    }
+
+    location ~* \.(?:sql|log|ini|bak|old)$ {
+        deny all;
+    }
+
+    location ~* ^/uploads/.*\.(?:php[0-9]?|phtml|phar|cgi|pl|py|asp|sh)$ {
+        deny all;
+    }
+
+    location ^~ /recordings/ {
+        deny all;
+    }
+
+    # Public WSS terminates here; keep Asterisk's HTTP/WebSocket listener private.
+    # Change the upstream address only if the PBX is reached through WireGuard.
+    location = /ws {
+        proxy_pass http://127.0.0.1:8088/ws;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+        proxy_set_header Host $host;
+        proxy_read_timeout 3600s;
+    }
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    location ~ \.php$ {
+        try_files $uri =404;
+        include fastcgi_params;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        fastcgi_param HTTPS on;
+        fastcgi_param HTTP_PROXY "";
+        fastcgi_pass unix:/run/php/php8.2-fpm.sock;
+    }
+}

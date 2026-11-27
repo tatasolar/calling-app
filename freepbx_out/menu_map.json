@@ -1,0 +1,240 @@
+{
+  "brand": "Tata Power Solarooof",
+  "default_language": "en",
+  "languages": {
+    "1": "bn",
+    "2": "en",
+    "3": "hi"
+  },
+  "navigation": {
+    "0": "previous menu (main menu repeats)",
+    "8": "main menu",
+    "7": "language menu"
+  },
+  "opening": {
+    "audio": "opening_bed",
+    "duration_seconds": 8,
+    "then": "fraud_warning"
+  },
+  "max_timeouts": 2,
+  "max_invalid_inputs": 3,
+  "menu_timeout_seconds": 15,
+  "contexts": {
+    "main_menu": {
+      "context": "solarooof-main-menu",
+      "audio": "main_menu",
+      "options": {
+        "1": "opt1_support_menu",
+        "2": "opt2_service_menu",
+        "3": "opt3_install_menu",
+        "4": "opt4_partner_menu",
+        "5": "opt5_netmeter_menu",
+        "6": "opt6_subsidy_menu",
+        "7": "opt7_lang_menu"
+      }
+    },
+    "menus": {
+      "solarooof-support-menu": {
+        "audio": "opt1_support_menu",
+        "previous": "solarooof-main-menu",
+        "options": {
+          "1": "solarooof-billing",
+          "2": "solarooof-portal",
+          "3": "solarooof-warranty"
+        }
+      },
+      "solarooof-service-menu": {
+        "audio": "opt2_service_menu",
+        "previous": "solarooof-main-menu",
+        "options": {
+          "1": "solarooof-service-existing",
+          "2": "solarooof-service-new-customer",
+          "3": "solarooof-service-maintenance"
+        }
+      },
+      "solarooof-service-existing": {
+        "audio": "opt2_1_existing_menu",
+        "previous": "solarooof-service-menu",
+        "options": {
+          "1": "solarooof-service-emergency",
+          "2": "solarooof-service-netmeter",
+          "3": "solarooof-service-inverter"
+        }
+      },
+      "solarooof-service-new-customer": {
+        "audio": "opt2_2_new_cust_menu",
+        "previous": "solarooof-service-menu",
+        "options": {
+          "1": "solarooof-service-onboarding",
+          "2": "solarooof-service-vendor"
+        }
+      },
+      "solarooof-service-maintenance": {
+        "audio": "opt2_3_maint_menu",
+        "previous": "solarooof-service-menu",
+        "options": {
+          "1": "solarooof-service-cleaning",
+          "2": "solarooof-service-visit-status"
+        }
+      },
+      "solarooof-install-menu": {
+        "audio": "opt3_install_menu",
+        "previous": "solarooof-main-menu",
+        "options": {
+          "1": "solarooof-install-residential",
+          "2": "solarooof-install-commercial",
+          "3": "solarooof-install-survey"
+        }
+      },
+      "solarooof-partner-menu": {
+        "audio": "opt4_partner_menu",
+        "previous": "solarooof-main-menu",
+        "options": {
+          "1": "solarooof-partner-apply",
+          "2": "solarooof-partner-eligibility",
+          "3": "solarooof-partner-status"
+        }
+      },
+      "solarooof-netmeter-menu": {
+        "audio": "opt5_netmeter_menu",
+        "previous": "solarooof-main-menu",
+        "options": {
+          "1": "solarooof-netmeter-pincode",
+          "2": "solarooof-netmeter-process",
+          "3": "solarooof-netmeter-export"
+        }
+      },
+      "solarooof-subsidy-menu": {
+        "audio": "opt6_subsidy_menu",
+        "previous": "solarooof-main-menu",
+        "options": {
+          "1": "solarooof-subsidy-schemes",
+          "2": "solarooof-subsidy-eligibility",
+          "3": "solarooof-subsidy-status"
+        }
+      },
+      "solarooof-lang-menu": {
+        "audio": "opt7_lang_menu",
+        "previous": "LANG_RETURN_CTX",
+        "options": {
+          "1": "bn",
+          "2": "en",
+          "3": "hi"
+        }
+      }
+    },
+    "leaves": {
+      "solarooof-billing": {
+        "audio": "opt1_1_billing",
+        "previous": "solarooof-support-menu",
+        "action_hook": "billing_queue"
+      },
+      "solarooof-portal": {
+        "audio": "opt1_2_portal",
+        "previous": "solarooof-support-menu",
+        "action_hook": "portal_link_agent"
+      },
+      "solarooof-warranty": {
+        "audio": "opt1_3_warranty",
+        "previous": "solarooof-support-menu",
+        "action_hook": "documentation_team"
+      },
+      "solarooof-service-emergency": {
+        "audio": "opt2_1_1_emergency_reconn",
+        "previous": "solarooof-service-existing",
+        "action_hook": "emergency"
+      },
+      "solarooof-service-netmeter": {
+        "audio": "opt2_1_2_netmeter_report",
+        "previous": "solarooof-service-existing",
+        "action_hook": "netmeter_report_sms_email"
+      },
+      "solarooof-service-inverter": {
+        "audio": "opt2_1_3_inverter_check",
+        "previous": "solarooof-service-existing",
+        "action_hook": "inverter_check_request"
+      },
+      "solarooof-service-onboarding": {
+        "audio": "opt2_2_1_onboarding",
+        "previous": "solarooof-service-new-customer",
+        "action_hook": "onboarding_whatsapp_sms"
+      },
+      "solarooof-service-vendor": {
+        "audio": "opt2_2_2_vendor_verify",
+        "previous": "solarooof-service-new-customer",
+        "action_hook": "vendor_verification"
+      },
+      "solarooof-service-cleaning": {
+        "audio": "opt2_3_1_cleaning_slot",
+        "previous": "solarooof-service-maintenance",
+        "action_hook": "cleaning_slot_request"
+      },
+      "solarooof-service-visit-status": {
+        "audio": "opt2_3_2_visit_status",
+        "previous": "solarooof-service-maintenance",
+        "action_hook": "visit_status_sms"
+      },
+      "solarooof-install-residential": {
+        "audio": "opt3_1_residential",
+        "previous": "solarooof-install-menu",
+        "action_hook": "residential_installation"
+      },
+      "solarooof-install-commercial": {
+        "audio": "opt3_2_commercial",
+        "previous": "solarooof-install-menu",
+        "action_hook": "commercial_installation"
+      },
+      "solarooof-install-survey": {
+        "audio": "opt3_3_site_survey",
+        "previous": "solarooof-install-menu",
+        "action_hook": "site_survey"
+      },
+      "solarooof-partner-apply": {
+        "audio": "opt4_1_new_apply",
+        "previous": "solarooof-partner-menu",
+        "action_hook": "partner_application"
+      },
+      "solarooof-partner-eligibility": {
+        "audio": "opt4_2_eligibility_docs",
+        "previous": "solarooof-partner-menu",
+        "action_hook": "partner_eligibility_docs"
+      },
+      "solarooof-partner-status": {
+        "audio": "opt4_3_app_status",
+        "previous": "solarooof-partner-menu",
+        "action_hook": "partner_application_status"
+      },
+      "solarooof-netmeter-pincode": {
+        "audio": "opt5_1_pincode_check",
+        "previous": "solarooof-netmeter-menu",
+        "action_hook": "netmeter_pincode_check"
+      },
+      "solarooof-netmeter-process": {
+        "audio": "opt5_2_conn_process",
+        "previous": "solarooof-netmeter-menu",
+        "action_hook": "netmeter_connection_process"
+      },
+      "solarooof-netmeter-export": {
+        "audio": "opt5_3_export_rules",
+        "previous": "solarooof-netmeter-menu",
+        "action_hook": "netmeter_export_rules"
+      },
+      "solarooof-subsidy-schemes": {
+        "audio": "opt6_1_schemes",
+        "previous": "solarooof-subsidy-menu",
+        "action_hook": "subsidy_schemes"
+      },
+      "solarooof-subsidy-eligibility": {
+        "audio": "opt6_2_eligibility",
+        "previous": "solarooof-subsidy-menu",
+        "action_hook": "subsidy_eligibility"
+      },
+      "solarooof-subsidy-status": {
+        "audio": "opt6_3_payout_status",
+        "previous": "solarooof-subsidy-menu",
+        "action_hook": "subsidy_payout_status"
+      }
+    }
+  },
+  "action_hook_note": "UserEvent actions require an AMI/event consumer or dialplan integration to perform queue, SMS, email, ticket, and lookup work."
+}

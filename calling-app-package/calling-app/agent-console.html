@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#111827" />
+  <title>Opening secure console — Solarooof</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="section-band">
+      <p class="eyebrow">SECURE AGENT ACCESS</p>
+      <h1 class="section-heading">Checking your sign-in</h1>
+      <p id="routeStatus" class="helper-text" role="status" aria-live="polite">Checking your agent session...</p>
+      <a class="btn" href="./index.html">Return to sign in</a>
+    </section>
+  </main>
+  <script>
+    (async function () {
+      const status = document.getElementById("routeStatus");
+      try {
+        const response = await fetch("./api/auth.php?action=me", {
+          credentials: "include",
+          cache: "no-store",
+          headers: { "Accept": "application/json" }
+        });
+        if (response.status === 401) {
+          window.location.replace("./index.html");
+          return;
+        }
+        if (!response.ok) {
+          throw new Error("The PHP authentication service is unavailable.");
+        }
+        const data = await response.json();
+        if (!data.ok || !data.agent) {
+          throw new Error("The server could not verify your agent session.");
+        }
+        window.location.replace("./agent-console.php");
+      } catch (_) {
+        status.textContent = "The secure console requires this project to run on a PHP-enabled web server. A static preview or file:// URL cannot authenticate sessions. Start the PHP app server, then sign in again.";
+      }
+    }());
+  </script>
+</body>
+</html>
